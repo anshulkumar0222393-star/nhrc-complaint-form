@@ -1,55 +1,87 @@
-<!DOCTYPE html>  <html lang="en">    <head>    
-<meta charset="UTF-8">    
-<meta name="viewport" content="width=device-width, initial-scale=1.0">    
-<title>NHRC Human Rights Complaint</title>  <style>    
-body {    
-    font-family: Arial, sans-serif;    
-    max-width: 700px;    
-    margin: 30px auto;    
-    padding: 20px;    
-    background: #f4f4f4;    
-}    .container {
-background: white;
-padding: 20px;
-border-radius: 10px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHRC Human Rights Complaint</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h2 {
-text-align: center;
+    text-align: center;
 }
 
 input, button {
-width: 100%;
-padding: 12px;
-margin: 10px 0;
-font-size: 16px;
-box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 button {
-background: #b71c1c;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
+    background: #b71c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-background: #7f0000;
+    background: #7f0000;
 }
-</style>  </head>  <body>  <div class="container">  <h2>NHRC Human Rights Complaint</h2>  <p>
-Submit complaint regarding alleged excessive use of force during student protest.
+</style>
+</head>
 
-</p>  <input type="text" id="name" placeholder="Enter Full Name">  <input type="text" id="contact" placeholder="Enter Contact Number">  <input type="email" id="email" placeholder="Enter Email Address">  <button onclick="sendComplaint()">    
-Send Complaint to NHRC    
-</button>  </div>  <script>    function sendComplaint(){
+<body>
+
+<div class="container">
+
+<h2>NHRC Human Rights Complaint</h2>
+
+<p>
+Submit complaint regarding alleged excessive use of force during student protest.
+</p>
+
+<input type="text" id="name" placeholder="Enter Full Name">
+
+<input type="text" id="contact" placeholder="Enter Contact Number">
+
+<input type="email" id="email" placeholder="Enter Email Address">
+
+
+<button onclick="sendComplaint()">
+Send Complaint to NHRC
+</button>
+
+</div>
+
+
+<script>
+
+function sendComplaint(){
 
 let name = document.getElementById("name").value;
 let contact = document.getElementById("contact").value;
 let email = document.getElementById("email").value;
 
-let subject =
+
+let subject = 
 "Complaint regarding alleged police action during CJP protest";
+
 
 let body = `
 COMPLAINT / GRIEVANCE REPORT
@@ -60,13 +92,16 @@ Name: ${name}
 Contact: ${contact}
 Email: ${email}
 
+
 Subject:
 Complaint regarding alleged excessive use of force during CJP protest.
+
 
 Incident Details:
 
 Date: July 20, 2026
 Location: New Delhi
+
 
 Complaint:
 
@@ -74,8 +109,10 @@ I request the National Human Rights Commission to look into the allegations rega
 
 Please conduct an impartial inquiry and take appropriate action as per law.
 
+
 Evidence/Documents:
 (Attach relevant photos, videos, medical documents or other evidence)
+
 
 Complainant Name:
 ${name}
@@ -84,20 +121,157 @@ Contact:
 ${contact}
 `;
 
+
 let mailLink =
-"mailto:complaint.nhrc@nic.in?subject="
-
-encodeURIComponent(subject)
-
-"&body="
-
-encodeURIComponent(body);
+"mailto:complaint.nhrc@nic.in?subject=" 
++ encodeURIComponent(subject)
++ "&body="
++ encodeURIComponent(body);
 
 
 window.location.href = mailLink;
 
 }
 
-</script>  </body>
+</script>
 
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHRC Human Rights Complaint</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #b71c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7f0000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>NHRC Human Rights Complaint</h2>
+
+<p>
+Submit complaint regarding alleged excessive use of force during student protest.
+</p>
+
+<input type="text" id="name" placeholder="Enter Full Name">
+
+<input type="text" id="contact" placeholder="Enter Contact Number">
+
+<input type="email" id="email" placeholder="Enter Email Address">
+
+
+<button onclick="sendComplaint()">
+Send Complaint to NHRC
+</button>
+
+</div>
+
+
+<script>
+
+function sendComplaint(){
+
+let name = document.getElementById("name").value;
+let contact = document.getElementById("contact").value;
+let email = document.getElementById("email").value;
+
+
+let subject = 
+"Complaint regarding alleged police action during CJP protest";
+
+
+let body = `
+COMPLAINT / GRIEVANCE REPORT
+
+Complainant Details:
+
+Name: ${name}
+Contact: ${contact}
+Email: ${email}
+
+
+Subject:
+Complaint regarding alleged excessive use of force during CJP protest.
+
+
+Incident Details:
+
+Date: July 20, 2026
+Location: New Delhi
+
+
+Complaint:
+
+I request the National Human Rights Commission to look into the allegations regarding the treatment of student protesters during the CJP protest.
+
+Please conduct an impartial inquiry and take appropriate action as per law.
+
+
+Evidence/Documents:
+(Attach relevant photos, videos, medical documents or other evidence)
+
+
+Complainant Name:
+${name}
+
+Contact:
+${contact}
+`;
+
+
+let mailLink =
+"mailto:complaint.nhrc@nic.in?subject=" 
++ encodeURIComponent(subject)
++ "&body="
++ encodeURIComponent(body);
+
+
+window.location.href = mailLink;
+
+}
+
+</script>
+
+</body>
 </html>
